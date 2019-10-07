@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2 style="text-align: center">Machine Status</h2>
+
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Machine Number</th>
+    <th>Status</th>
+  </tr>
+  
+  {% for machine in table_data %}
+    <tr>
+      <td>{{ machine.id }}</td>
+      <td>{{ machine.machine_number }}</td>
+      <td>{{ machine.status }}</td>
+    </tr>
+  {% endfor %}
+  
+</table>
+
+</body>
+</html>
