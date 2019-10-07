@@ -2,7 +2,7 @@
 
 ## Steps to run:
 
-1. Open terminal/cmd
+### Open terminal/cmd
 
 * Run the commands: (this is just for setting everything up) 
 1. pip install -r requirements.txt
